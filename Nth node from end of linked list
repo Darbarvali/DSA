@@ -1,0 +1,19 @@
+    #code here
+def lenLinkedList(head):
+    node = head
+    l = 0
+    while node:
+        node = node.next
+        l += 1
+    return l
+def getNthFromLast(head,n):
+    #code here
+    l = lenLinkedList(head)
+    if n > l:
+        return -1
+    node = head
+    count = 0
+    while count < l-n:
+        node = node.next
+        count += 1
+    return node.data
