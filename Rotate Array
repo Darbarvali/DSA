@@ -1,0 +1,6 @@
+  def rotateArr(self,A,D,N):
+        #Your code here
+       if N > D:
+           A[:]=A[D:] +A[:D]
+       else:
+           A[:]=A[D-N:]+A[:D-N]
